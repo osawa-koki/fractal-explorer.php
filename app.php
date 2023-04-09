@@ -3,6 +3,7 @@
 require_once("./drawer/mandelbrot.php");
 require_once("./drawer/julia.php");
 require_once("./drawer/tricorn.php");
+require_once("./drawer/burning_ship.php");
 
 $items = [];
 
@@ -34,6 +35,13 @@ $tricorn_config["height"] = $height;
 $tricorn_config["output"] = $output_dir . DIRECTORY_SEPARATOR . $tricorn_config["output_file"];
 array_push($items, $tricorn_config["output_file"]);
 tricorn_drawer($tricorn_config);
+
+$burning_ship_config = $config["burning_ship"];
+$burning_ship_config["width"] = $width;
+$burning_ship_config["height"] = $height;
+$burning_ship_config["output"] = $output_dir . DIRECTORY_SEPARATOR . $burning_ship_config["output_file"];
+array_push($items, $burning_ship_config["output_file"]);
+burning_ship_drawer($burning_ship_config);
 
 file_put_contents($output_dir . DIRECTORY_SEPARATOR . "items.txt", join("\n", $items));
 
