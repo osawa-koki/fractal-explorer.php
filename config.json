@@ -26,14 +26,12 @@
     "output_file": "julia.png"
   },
   "tricorn": {
-    "x_min": -2.3,
-    "x_max": 1.7,
-    "y_min": -2,
-    "y_max": 2,
-    "max_iterations": 50,
-    "threshold": 4,
-    "color": 160,
-    "background_color": "black",
+    "x_min": -2.2,
+    "x_max": 1.8,
+    "y_min": -2.0,
+    "y_max": 2.0,
+    "threshold": 8,
+    "max_iterations": 256,
     "output_file": "tricorn.png"
   },
   "burning_ship": {

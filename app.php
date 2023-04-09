@@ -2,6 +2,7 @@
 
 require_once("./drawer/mandelbrot.php");
 require_once("./drawer/julia.php");
+require_once("./drawer/tricorn.php");
 
 $items = [];
 
@@ -26,6 +27,13 @@ $julia_config["height"] = $height;
 $julia_config["output"] = $output_dir . DIRECTORY_SEPARATOR . $julia_config["output_file"];
 array_push($items, $julia_config["output_file"]);
 julia_drawer($julia_config);
+
+$tricorn_config = $config["tricorn"];
+$tricorn_config["width"] = $width;
+$tricorn_config["height"] = $height;
+$tricorn_config["output"] = $output_dir . DIRECTORY_SEPARATOR . $tricorn_config["output_file"];
+array_push($items, $tricorn_config["output_file"]);
+tricorn_drawer($tricorn_config);
 
 file_put_contents($output_dir . DIRECTORY_SEPARATOR . "items.txt", join("\n", $items));
 
