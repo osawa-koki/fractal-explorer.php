@@ -11,10 +11,6 @@ imagefill($image, 0, 0, $blue);
 // 画像を保存する
 imagepng($image, 'tmp.png');
 
-// 画像を表示する場合は以下のようにします
-// header('Content-Type: image/png');
-// imagepng($image);
-
 // 画像を破棄する
 imagedestroy($image);
 ?>
