@@ -1,0 +1,47 @@
+{
+  "$schema": "./config.schema.json",
+  "global": {
+    "width": 512,
+    "height": 512,
+    "output_dir": "./dist"
+  },
+  "mandelbrot": {
+    "x_min": -2.2,
+    "x_max": 1.0,
+    "y_min": -1.6,
+    "y_max": 1.6,
+    "threshold": 8,
+    "max_iterations": 256,
+    "output_file": "mandelbrot.png"
+  },
+  "julia": {
+    "x_min": -1.5,
+    "x_max": 1.5,
+    "y_min": -1.5,
+    "y_max": 1.5,
+    "cx": -0.4,
+    "cy": 0.6,
+    "threshold": 8,
+    "max_iterations": 256,
+    "output_file": "julia.png"
+  },
+  "tricorn": {
+    "x_min": -2.2,
+    "x_max": 1.8,
+    "y_min": -2.0,
+    "y_max": 2.0,
+    "threshold": 8,
+    "max_iterations": 256,
+    "output_file": "tricorn.png"
+  },
+  "burning_ship": {
+    "x_min": -1.8,
+    "x_max": -1.7,
+    "y_min": -0.1,
+    "y_max": 0.02,
+    "threshold": 10,
+    "max_iterations": 20,
+    "red_strength": 10,
+    "output_file": "burning_ship.png"
+  }
+}

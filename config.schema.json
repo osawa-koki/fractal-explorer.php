@@ -1,0 +1,428 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "global",
+    "mandelbrot",
+    "julia",
+    "tricorn",
+    "burning_ship"
+  ],
+  "properties": {
+    "global": {
+      "type": "object",
+      "default": {},
+      "title": "The global Schema",
+      "required": [
+        "width",
+        "height",
+        "output_dir"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "default": 0,
+          "title": "The width Schema",
+          "examples": [
+            512
+          ]
+        },
+        "height": {
+          "type": "integer",
+          "default": 0,
+          "title": "The height Schema",
+          "examples": [
+            512
+          ]
+        },
+        "output_dir": {
+          "type": "string",
+          "default": "",
+          "title": "The output_dir Schema",
+          "examples": [
+            "./dist"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "width": 512,
+          "height": 512,
+          "output_dir": "./dist"
+        }
+      ]
+    },
+    "mandelbrot": {
+      "type": "object",
+      "default": {},
+      "title": "The mandelbrot Schema",
+      "required": [
+        "x_min",
+        "x_max",
+        "y_min",
+        "y_max",
+        "threshold",
+        "max_iterations",
+        "output_file"
+      ],
+      "properties": {
+        "x_min": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The x_min Schema",
+          "examples": [
+            -2.2
+          ]
+        },
+        "x_max": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The x_max Schema",
+          "examples": [
+            1.0
+          ]
+        },
+        "y_min": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The y_min Schema",
+          "examples": [
+            -1.6
+          ]
+        },
+        "y_max": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The y_max Schema",
+          "examples": [
+            1.6
+          ]
+        },
+        "threshold": {
+          "type": "integer",
+          "default": 0,
+          "title": "The threshold Schema",
+          "examples": [
+            8
+          ]
+        },
+        "max_iterations": {
+          "type": "integer",
+          "default": 0,
+          "title": "The max_iterations Schema",
+          "examples": [
+            256
+          ]
+        },
+        "output_file": {
+          "type": "string",
+          "default": "",
+          "title": "The output_file Schema",
+          "examples": [
+            "mandelbrot.png"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "x_min": -2.2,
+          "x_max": 0.8,
+          "y_min": -1.5,
+          "y_max": 1.5,
+          "threshold": 4,
+          "max_iterations": 20,
+          "color": 100,
+          "background_color": "black",
+          "output_file": "mandelbrot.png"
+        }
+      ]
+    },
+    "julia": {
+      "type": "object",
+      "default": {},
+      "title": "The julia Schema",
+      "required": [
+        "x_min",
+        "x_max",
+        "y_min",
+        "y_max",
+        "cx",
+        "cy",
+        "threshold",
+        "max_iterations",
+        "output_file"
+      ],
+      "properties": {
+        "x_min": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The x_min Schema",
+          "examples": [
+            -1.5
+          ]
+        },
+        "x_max": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The x_max Schema",
+          "examples": [
+            1.5
+          ]
+        },
+        "y_min": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The y_min Schema",
+          "examples": [
+            -1.5
+          ]
+        },
+        "y_max": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The y_max Schema",
+          "examples": [
+            1.5
+          ]
+        },
+        "cx": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The cx Schema",
+          "examples": [
+            -0.4
+          ]
+        },
+        "cy": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The cy Schema",
+          "examples": [
+            0.6
+          ]
+        },
+        "threshold": {
+          "type": "integer",
+          "default": 0,
+          "title": "The threshold Schema",
+          "examples": [
+            4
+          ]
+        },
+        "max_iterations": {
+          "type": "integer",
+          "default": 0,
+          "title": "The max_iterations Schema",
+          "examples": [
+            70
+          ]
+        },
+        "output_file": {
+          "type": "string",
+          "default": "",
+          "title": "The output_file Schema",
+          "examples": [
+            "julia.png"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "x_min": -1.5,
+          "x_max": 1.5,
+          "y_min": -1.5,
+          "y_max": 1.5,
+          "cx": -0.4,
+          "cy": 0.6,
+          "threshold": 4,
+          "max_iterations": 70,
+          "color": 220,
+          "background_color": "black",
+          "output_file": "julia.png"
+        }
+      ]
+    },
+    "tricorn": {
+      "type": "object",
+      "default": {},
+      "title": "The tricorn Schema",
+      "required": [
+        "x_min",
+        "x_max",
+        "y_min",
+        "y_max",
+        "max_iterations",
+        "threshold",
+        "output_file"
+      ],
+      "properties": {
+        "x_min": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The x_min Schema",
+          "examples": [
+            -2.3
+          ]
+        },
+        "x_max": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The x_max Schema",
+          "examples": [
+            1.7
+          ]
+        },
+        "y_min": {
+          "type": "number",
+          "default": 0,
+          "title": "The y_min Schema",
+          "examples": [
+            -2.0
+          ]
+        },
+        "y_max": {
+          "type": "number",
+          "default": 0,
+          "title": "The y_max Schema",
+          "examples": [
+            2.0
+          ]
+        },
+        "max_iterations": {
+          "type": "integer",
+          "default": 0,
+          "title": "The max_iterations Schema",
+          "examples": [
+            50
+          ]
+        },
+        "threshold": {
+          "type": "integer",
+          "default": 0,
+          "title": "The threshold Schema",
+          "examples": [
+            4
+          ]
+        },
+        "output_file": {
+          "type": "string",
+          "default": "",
+          "title": "The output_file Schema",
+          "examples": [
+            "tricorn.png"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "x_min": -2.3,
+          "x_max": 1.7,
+          "y_min": -2.0,
+          "y_max": 2.0,
+          "max_iterations": 50,
+          "threshold": 4,
+          "color": 160,
+          "background_color": "black",
+          "output_file": "tricorn.png"
+        }
+      ]
+    },
+    "burning_ship": {
+      "type": "object",
+      "default": {},
+      "title": "The burning_ship Schema",
+      "required": [
+        "x_min",
+        "x_max",
+        "y_min",
+        "y_max",
+        "threshold",
+        "max_iterations",
+        "red_strength",
+        "output_file"
+      ],
+      "properties": {
+        "x_min": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The x_min Schema",
+          "examples": [
+            -1.8
+          ]
+        },
+        "x_max": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The x_max Schema",
+          "examples": [
+            -1.7
+          ]
+        },
+        "y_min": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The y_min Schema",
+          "examples": [
+            -0.1
+          ]
+        },
+        "y_max": {
+          "type": "number",
+          "default": 0.0,
+          "title": "The y_max Schema",
+          "examples": [
+            0.02
+          ]
+        },
+        "threshold": {
+          "type": "integer",
+          "default": 0,
+          "title": "The threshold Schema",
+          "examples": [
+            10
+          ]
+        },
+        "max_iterations": {
+          "type": "integer",
+          "default": 0,
+          "title": "The max_iterations Schema",
+          "examples": [
+            20
+          ]
+        },
+        "red_strength": {
+          "type": "integer",
+          "default": 0,
+          "title": "The red_strength Schema",
+          "examples": [
+            10
+          ]
+        },
+        "output_file": {
+          "type": "string",
+          "default": "",
+          "title": "The output_file Schema",
+          "examples": [
+            "burning_ship.png"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "x_min": -1.8,
+          "x_max": -1.7,
+          "y_min": -0.1,
+          "y_max": 0.02,
+          "max_iterations": 20,
+          "threshold": 10,
+          "color": 80,
+          "background_color": "black",
+          "output_file": "burning_ship.png"
+        }
+      ]
+    }
+  }
+}
