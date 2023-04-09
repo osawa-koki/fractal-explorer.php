@@ -288,7 +288,7 @@
           "default": 0,
           "title": "The y_min Schema",
           "examples": [
-            -2
+            -2.0
           ]
         },
         "y_max": {
@@ -296,7 +296,7 @@
           "default": 0,
           "title": "The y_max Schema",
           "examples": [
-            2
+            2.0
           ]
         },
         "max_iterations": {
