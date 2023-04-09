@@ -161,8 +161,6 @@
         "cy",
         "threshold",
         "max_iterations",
-        "color",
-        "background_color",
         "output_file"
       ],
       "properties": {
@@ -228,22 +226,6 @@
           "title": "The max_iterations Schema",
           "examples": [
             70
-          ]
-        },
-        "color": {
-          "type": "integer",
-          "default": 0,
-          "title": "The color Schema",
-          "examples": [
-            220
-          ]
-        },
-        "background_color": {
-          "type": "string",
-          "default": "",
-          "title": "The background_color Schema",
-          "examples": [
-            "black"
           ]
         },
         "output_file": {

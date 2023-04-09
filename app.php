@@ -1,6 +1,7 @@
 <?php
 
 require_once("./drawer/mandelbrot.php");
+require_once("./drawer/julia.php");
 
 $items = [];
 
@@ -18,6 +19,13 @@ $mandelbrot_config["height"] = $height;
 $mandelbrot_config["output"] = $output_dir . DIRECTORY_SEPARATOR . $mandelbrot_config["output_file"];
 array_push($items, $mandelbrot_config["output_file"]);
 mandelbrot_drawer($mandelbrot_config);
+
+$julia_config = $config["julia"];
+$julia_config["width"] = $width;
+$julia_config["height"] = $height;
+$julia_config["output"] = $output_dir . DIRECTORY_SEPARATOR . $julia_config["output_file"];
+array_push($items, $julia_config["output_file"]);
+julia_drawer($julia_config);
 
 file_put_contents($output_dir . DIRECTORY_SEPARATOR . "items.txt", join("\n", $items));
 

@@ -21,10 +21,8 @@
     "y_max": 1.5,
     "cx": -0.4,
     "cy": 0.6,
-    "threshold": 4,
-    "max_iterations": 70,
-    "color": 220,
-    "background_color": "black",
+    "threshold": 8,
+    "max_iterations": 256,
     "output_file": "julia.png"
   },
   "tricorn": {
