@@ -38,7 +38,7 @@ function mandelbrot_drawer($config) {
         $i++;
       }
 
-      if ($i == $max_iterations) continue;
+      if ($i === $max_iterations) continue;
       imagesetpixel($canvas, $x, $y, $colors[$i]);
     }
   }
