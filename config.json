@@ -6,10 +6,10 @@
     "output_dir": "./dist"
   },
   "mandelbrot": {
-    "x_min": -2.4,
-    "x_max": 1.6,
-    "y_min": -2.0,
-    "y_max": 2.0,
+    "x_min": -2.2,
+    "x_max": 1.0,
+    "y_min": -1.6,
+    "y_max": 1.6,
     "threshold": 8,
     "max_iterations": 256,
     "output_file": "mandelbrot.png"

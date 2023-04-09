@@ -82,7 +82,7 @@
           "default": 0.0,
           "title": "The x_min Schema",
           "examples": [
-            -2.4
+            -2.2
           ]
         },
         "x_max": {
@@ -90,7 +90,7 @@
           "default": 0.0,
           "title": "The x_max Schema",
           "examples": [
-            1.6
+            1.0
           ]
         },
         "y_min": {
@@ -98,7 +98,7 @@
           "default": 0.0,
           "title": "The y_min Schema",
           "examples": [
-            -2.0
+            -1.6
           ]
         },
         "y_max": {
@@ -106,7 +106,7 @@
           "default": 0.0,
           "title": "The y_max Schema",
           "examples": [
-            2.0
+            1.6
           ]
         },
         "threshold": {
