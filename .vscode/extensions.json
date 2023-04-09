@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "github.copilot",
+    "mhutchie.git-graph",
+    "editorconfig.editorconfig",
+    "bmewburn.vscode-intelephense-client"
+  ]
+}
