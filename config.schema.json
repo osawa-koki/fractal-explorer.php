@@ -74,8 +74,6 @@
         "y_max",
         "threshold",
         "max_iterations",
-        "color",
-        "background_color",
         "output_file"
       ],
       "properties": {
@@ -84,7 +82,7 @@
           "default": 0.0,
           "title": "The x_min Schema",
           "examples": [
-            -2.2
+            -2.4
           ]
         },
         "x_max": {
@@ -92,7 +90,7 @@
           "default": 0.0,
           "title": "The x_max Schema",
           "examples": [
-            0.8
+            1.6
           ]
         },
         "y_min": {
@@ -100,7 +98,7 @@
           "default": 0.0,
           "title": "The y_min Schema",
           "examples": [
-            -1.5
+            -2.0
           ]
         },
         "y_max": {
@@ -108,7 +106,7 @@
           "default": 0.0,
           "title": "The y_max Schema",
           "examples": [
-            1.5
+            2.0
           ]
         },
         "threshold": {
@@ -116,7 +114,7 @@
           "default": 0,
           "title": "The threshold Schema",
           "examples": [
-            4
+            8
           ]
         },
         "max_iterations": {
@@ -124,23 +122,7 @@
           "default": 0,
           "title": "The max_iterations Schema",
           "examples": [
-            20
-          ]
-        },
-        "color": {
-          "type": "integer",
-          "default": 0,
-          "title": "The color Schema",
-          "examples": [
-            100
-          ]
-        },
-        "background_color": {
-          "type": "string",
-          "default": "",
-          "title": "The background_color Schema",
-          "examples": [
-            "black"
+            256
           ]
         },
         "output_file": {

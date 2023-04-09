@@ -1,16 +1,19 @@
 <?php
-// 100x100の空の画像を作成
-$image = imagecreatetruecolor(100, 100);
 
-// 青色を作成
-$blue = imagecolorallocate($image, 0, 0, 255);
+require_once("./drawer/mandelbrot.php");
 
-// 画像全体を青色で塗りつぶす
-imagefill($image, 0, 0, $blue);
+$json_string = file_get_contents("./config.json");
+$config = json_decode($json_string, true);
 
-// 画像を保存する
-imagepng($image, 'tmp.png');
+$global_config = $config["global"];
+$width = (int)$global_config["width"];
+$height = (int)$global_config["height"];
+$output_dir = $global_config["output_dir"];
 
-// 画像を破棄する
-imagedestroy($image);
+$mandelbrot_config = $config["mandelbrot"];
+$mandelbrot_config["width"] = $width;
+$mandelbrot_config["height"] = $height;
+$mandelbrot_config["output"] = $output_dir . DIRECTORY_SEPARATOR . $mandelbrot_config["output_file"];
+mandelbrot_drawer($mandelbrot_config);
+
 ?>

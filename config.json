@@ -6,14 +6,12 @@
     "output_dir": "./dist"
   },
   "mandelbrot": {
-    "x_min": -2.2,
-    "x_max": 0.8,
-    "y_min": -1.5,
-    "y_max": 1.5,
-    "threshold": 4,
-    "max_iterations": 20,
-    "color": 100,
-    "background_color": "black",
+    "x_min": -2.4,
+    "x_max": 1.6,
+    "y_min": -2.0,
+    "y_max": 2.0,
+    "threshold": 8,
+    "max_iterations": 256,
     "output_file": "mandelbrot.png"
   },
   "julia": {
